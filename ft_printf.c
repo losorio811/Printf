@@ -51,3 +51,70 @@ int	ft_printf(const char *str, ...)
 	va_end(ap);
 	return (count);
 }
+
+/*int	main()
+{
+#include <limits.h>
+
+	char c = 'a';
+	char *str = "Hello World!";
+	void *ptr = &c;
+	int n = 42;
+	int hexN = 48576;
+	int mine;
+	int original;
+
+	//Test for %%
+	original = printf("%%%%: %%\n");
+	mine = ft_printf("%%%%: %%\n");
+	if (original != mine)
+		printf("Error of %%%%\n");
+
+	//Test for %c
+	original = printf("%%c: %c\n", c);
+	mine = ft_printf("%%c: %c\n", c);
+	if (original != mine)
+		printf("Error on %%c\n");
+
+	//Test for %s
+	original = printf("%%s: %s\n", str);
+	mine = ft_printf("%%s: %s\n", str);
+	if (original != mine)
+		printf("Error on %%s\n");
+
+	//Test for %d and %i 
+	original = printf("%%d: %d\n", n);
+	mine = ft_printf("%%d: %d\n", n);
+	if (original != mine)
+		printf("Error on %%d\n");
+	
+
+	original = printf("%%i: %i\n", n);
+	mine = ft_printf("%%i: %i\n", n);
+	if (original != mine)
+		printf("Error on %%i\n");
+
+	//Test for %u
+	original = printf("%%u: %u\n", UINT_MAX);
+	mine = ft_printf("%%u: %u\n", UINT_MAX);
+	if (original != mine)
+		printf("Error on %%u\n");
+
+	//Test for %x and %X
+	original = printf("%%x: %x\n", hexN);
+	mine = ft_printf("%%x: %x\n", hexN);
+	if (original != mine)
+		printf("Error on %%x\n");
+
+	original = printf("%%X: %X\n", hexN);
+	mine = ft_printf("%%X: %X\n", hexN);
+	if (original != mine)
+		printf("Error on %%X\n");
+	
+	//Test for %p
+	original = printf("%%p: %p\n", ptr);
+	mine = ft_printf("%%p: %p\n", ptr);
+	printf("%d, %d\n", original, mine);
+	if (original != mine)
+		printf("Error on %%p\n");
+}*/
